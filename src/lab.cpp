@@ -12,27 +12,27 @@ char * toNum(char text){
     char input = tolower(text);
     switch (input) {
         case 'a':
-            return "1023";
+            return (char *)"1023";
             break;
         case 'b':
-            return "20101013";
+            return (char *)"20101013";
             break;
         case 'c':
-            return "20102013";
+            return (char *)"20102013";
             break;
         case 'd':
-            return "201013";
+            return (char *)"201013";
             break;
         case 'e':
-            return "103";
+            return (char *)"103";
             break;
         case 'f':
-            return "10102013";
+            return (char *)"10102013";
             break;
         
         default:
             printf("invalid character was entered");
-            return NULL;
+            return (char *)'\0';
             break;
     }
 }
@@ -43,7 +43,7 @@ char * textToBinary(char *text){
 
     while((*head != '\0')){
         char *temp = toNum(*head);
-        if(*temp == NULL) return NULL;
+        if(*temp == '\0') return NULL;
 
         int size = strlen(rVal) + strlen(temp);
         char *cat = (char *) malloc(size);
