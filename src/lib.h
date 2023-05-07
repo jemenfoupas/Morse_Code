@@ -3,12 +3,12 @@
 /**
  * 
  */
-void textToBinary(char *text);
+char * textToBinary(char *text);
 
 /**
  * 
  */
-void binaryToText(char *binary);
+char * binaryToText(char *binary);
 
 /**
  * 
